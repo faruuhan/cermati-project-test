@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.notif {
+  font-family: "Open Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  padding: 10px 10px;
+}
+
+.body-notif {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-notif {
+  background-color: #007bc1;
+  border: #007bc1;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+.hero {
+  background: url(/assets/work-desk__dustin-lee.jpg) rgb(0, 74, 117);
+  background-size: cover;
+  height: 100vh;
+  background-blend-mode: multiply;
+}
+
+.desc-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.desc-hero > div > h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+.desc-hero > div > h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  margin: 10px 0;
+}
+
+.desc-hero > div > h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.btn-contact {
+  font-family: "Open Sans", sans-serif;
+  padding: 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn-contact:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: #004a75;
+}
+
+.panel {
+  background-color: #e5e5e5;
+  padding: 50px 4px;
+}
+
+.title-panel > h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.title-panel > h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.card {
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #d1d1d1;
+  padding: 20px;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.header-card > h4 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.newslater {
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0 30px 0;
+  width: 100vw;
+  min-height: 250px;
+  background-color: #007bc1;
+  opacity: 80%;
+}
+
+.close-place {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-close {
+  background-color: transparent;
+  border: 0;
+}
+
+.body-newslater {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.form-newslater {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-newslater > input {
+  padding: 10px;
+}
+
+.form-newslater > .btn-newslater {
+  padding: 10px;
+  background-color: #ff8000;
+  border: #ff8000;
+}
+
+.footer {
+  font-family: "Open Sans", sans-serif;
+  background-color: #220e50;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media (min-width: 480px) {
+  .notif {
+    padding: 10px 10px;
+  }
+
+  .body-notif {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .title-panel {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .newslater {
+    width: 550px;
+  }
+}
+
+@media (min-width: 960px) {
+  .body-notif {
+    flex-direction: row;
+  }
+
+  .container {
+    padding: 0 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .title-panel {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
